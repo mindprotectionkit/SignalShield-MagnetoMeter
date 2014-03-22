@@ -87,7 +87,8 @@ public class GraphicalView extends View {
    * @param context the context
    * @param chart the chart to be drawn
    */
-  public GraphicalView(Context context, AbstractChart chart) {
+  @SuppressWarnings("deprecation")
+public GraphicalView(Context context, AbstractChart chart) {
     super(context);
     mChart = chart;
     mHandler = new Handler();

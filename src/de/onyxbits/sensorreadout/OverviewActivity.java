@@ -23,6 +23,7 @@ import android.view.*;
 import android.hardware.*;
 import android.content.*;
 import android.net.*;
+import com.mimdprotectionkit.magnetometer.R;
 
 /**
  * Main <code>Activity</code>. Shows a list of all available <code>Sensor</code>S and

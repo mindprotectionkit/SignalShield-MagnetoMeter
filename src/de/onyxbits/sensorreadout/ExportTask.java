@@ -2,9 +2,9 @@ package de.onyxbits.sensorreadout;
 
 import org.achartengine.model.XYMultipleSeriesDataset;
 import org.achartengine.model.XYSeries;
-
 import android.content.Intent;
 import android.os.AsyncTask;
+import com.mimdprotectionkit.magnetometer.R;
 
 /**
  * Builds the CSV dump for sharing.

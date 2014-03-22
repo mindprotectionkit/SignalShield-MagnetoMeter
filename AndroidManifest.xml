@@ -1,34 +1,42 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="de.onyxbits.sensorreadout"
-	android:versionCode="5"
-	android:versionName="2.1" >
+    package="com.mimdprotectionkit.magnetometer"
+    android:versionCode="5"
+    android:versionName="2.1" >
 
-	<uses-sdk
-		android:minSdkVersion="9"
-		android:targetSdkVersion="17" />
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
 
-	<application
-		android:allowBackup="true"
-		android:icon="@drawable/ic_launcher"
-		android:label="@string/app_name"
-		android:theme="@style/AppTheme" >
-		<activity
-			android:name="OverviewActivity"
-			android:icon="@drawable/ic_launcher"
-			android:label="@string/app_name" >
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="de.onyxbits.sensorreadout.OverviewActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="de.onyxbits.sensorreadout.ReadoutActivity"
+            android:parentActivityName="de.onyxbits.sensorreadout.OverviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.onyxbits.sensorreadout.OverviewActivity" />
+        </activity>
+        <activity
+            android:name="de.onyxbits.sensorreadout.MagnetoMeterActivity"
+            android:parentActivityName="de.onyxbits.sensorreadout.OverviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.onyxbits.sensorreadout.OverviewActivity" />
 
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-		</activity>
-		<activity
-			android:name="ReadoutActivity"
-			android:parentActivityName="de.onyxbits.sensorreadout.OverviewActivity" >
-			<meta-data
-				android:name="android.support.PARENT_ACTIVITY"
-				android:value="de.onyxbits.sensorreadout.OverviewActivity" />
-		</activity>
-	</application>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>

@@ -20,6 +20,7 @@ import android.widget.*;
 import android.view.*;
 import android.content.*;
 import android.hardware.*;
+import com.mimdprotectionkit.magnetometer.R;
 import java.util.*;
 
 /**
